@@ -21,7 +21,11 @@ namespace PatternMatchingCSharp9
                 Console.WriteLine($"{t} is a Type");
             }
 
-           
+            //Relational, Conjuctive and Disjunctive patterns
+            if (c is >= 'a' and <= 'z' or >= 'A' and <= 'Z')
+            {
+                Console.WriteLine($"{c} is a character");
+            }
 
 
 
