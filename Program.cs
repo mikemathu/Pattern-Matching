@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using PatternMatchingCSharp7;
 using PatternMatchingCSharp9;
+using PatternMatchingTypeTest;
 
 namespace PatternMatching
 {
@@ -13,7 +14,12 @@ namespace PatternMatching
         static void Main()
         {
             //CSharp7.IfElsePatternMatching();
-            CSharp9.IfElsePatternMatchingUpdateInCShharp9();
+            //CSharp9.IfElsePatternMatchingUpdateInCShharp9();
+
+
+            Console.WriteLine(TypeTest.Test());
+
+            //TypeTest.Test();
 
         }
 
