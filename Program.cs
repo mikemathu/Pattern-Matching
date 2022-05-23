@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using PatternMatchingCSharp7;
 using PatternMatchingCSharp9;
 using PatternMatchingTypeTest;
+using PatternMatchingInSwitchStatement;
 
 namespace PatternMatching
 {
@@ -17,9 +18,10 @@ namespace PatternMatching
             //CSharp9.IfElsePatternMatchingUpdateInCShharp9();
 
 
-            Console.WriteLine(TypeTest.Test());
-
+            //Console.WriteLine(TypeTest.Test());
             //TypeTest.Test();
+
+            Console.WriteLine(PatternMatch.SwitchStatement());
 
         }
 
