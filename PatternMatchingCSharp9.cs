@@ -33,7 +33,16 @@ namespace PatternMatchingCSharp9
                 //Console.WriteLine($"{c} iz a character or separator");
             }
 
-           
+            //Negative patterns
+            if (testItem1 is not string)
+            {
+                Console.WriteLine($"{testItem1} is not a string");
+            }
+            if (testItem1 is not null)
+            {
+                Console.WriteLine($"{testItem1} is not null");
+            }
+            Console.WriteLine();
 
 
 
