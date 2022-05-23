@@ -21,11 +21,19 @@ namespace PatternMatchingCSharp9
                 Console.WriteLine($"{t} is a Type");
             }
 
-            //Relational, Conjuctive and Disjunctive patterns
+            //Relational, Conjuctive and Disjunctive patterns. Conjuctive (and) patterns Requires both patterns to match.Disjunctive (or) patterns Requires either pattern to match.Relational patterns Requires input to be less than, less than or equal, greater than, or greater than or equal
             if (c is >= 'a' and <= 'z' or >= 'A' and <= 'Z')
             {
-                Console.WriteLine($"{c} is a character");
+                //Console.WriteLine($"{c} is a character");
             }
+
+            //Parenthesized patterns
+            if (c is (>= 'a' and <= 'z') or (>= 'A' and <= 'Z') or '.' or ',' )
+            {
+                //Console.WriteLine($"{c} iz a character or separator");
+            }
+
+           
 
 
 
